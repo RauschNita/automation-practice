@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.EmailGenerator;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,7 +40,7 @@ public class PracticeWebshopTest {
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti4@gmail.com");
+        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString()+"@gmail.com");
         driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
 
         final By FIRST_NAME = By.xpath("//*[@id=\"customer_firstname\"]");
@@ -80,5 +81,10 @@ public class PracticeWebshopTest {
         String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
         String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
         Assertions.assertEquals(expected, result);
+    }
+    
+    @Test
+    public void Login() {
+        
     }
 }
