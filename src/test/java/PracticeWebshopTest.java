@@ -82,8 +82,36 @@ public class PracticeWebshopTest {
         String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
         Assertions.assertEquals(expected, result);
     }
-    
+
     @Test
+    public void RegistrationWithInvalidEmail() {
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("0");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+        String expected = "Invalid email address.";
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void RegistrationWithAlreadyCreatedEmail() {
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString() + "@gmail.com");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+    }
+        @Test
     public void Login() {
         
     }
