@@ -107,9 +107,28 @@ public class PracticeWebshopTest {
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString() + "@gmail.com");
+        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti@gmail.com");
         driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
 
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+        String expected = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void RegistrationWithEmptyField() {
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+        String expected = "Invalid email address.";
+        Assertions.assertEquals(expected, result);
     }
         @Test
     public void Login() {
