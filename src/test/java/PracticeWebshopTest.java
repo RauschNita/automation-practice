@@ -57,7 +57,7 @@ public class PracticeWebshopTest {
         driver.findElement(FIRST_NAME).sendKeys("Auti");
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LAST_NAME))).click();
-        driver.findElement(LAST_NAME).sendKeys("Eszti");
+        driver.findElement(LAST_NAME).sendKeys("Teszti");
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
         driver.findElement(PASSWORD).sendKeys("Tester");
@@ -102,13 +102,14 @@ public class PracticeWebshopTest {
     @Test
     public void RegistrationWithAlreadyCreatedEmail() {
         final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
-        final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
+        final By NEW_EMAIL = By.xpath("//*[@id=\"email_create\"]");
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
 
-        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti@gmail.com");
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((NEW_EMAIL))).click();
+        driver.findElement(NEW_EMAIL).sendKeys("autiteszti@gmail.com");
+
+        driver.findElement(NEW_EMAIL).sendKeys(Keys.ENTER);
 
         String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
         String expected = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
@@ -130,8 +131,83 @@ public class PracticeWebshopTest {
         String expected = "Invalid email address.";
         Assertions.assertEquals(expected, result);
     }
-        @Test
+
+    @Test
     public void Login() {
-        
+            final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+            final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
+            final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+
+            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+            driver.findElement(EMAIL_FIELD).sendKeys("autiteszti1@gmail.com");
+
+            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+            driver.findElement(PASSWORD).sendKeys("Tester");
+            driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+            String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
+            String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
+            Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void LoginWithNotRegisteredEmail(){
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
+        final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti4@gmail.com");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+        driver.findElement(PASSWORD).sendKeys("Tester");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
+        String expected = "Authentication failed.";
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void LoginWithInvalidEmail() {
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
+        final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("-");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+        driver.findElement(PASSWORD).sendKeys("Tester");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
+        String expected = "Invalid email address.";
+        Assertions.assertEquals(expected, result);
+    }
+    @Test
+    public void LoginWithEmptyEmail(){
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
+        final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+        driver.findElement(PASSWORD).sendKeys("Tester");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
+        String expected = "An email address required.";
+        Assertions.assertEquals(expected, result);
     }
 }
