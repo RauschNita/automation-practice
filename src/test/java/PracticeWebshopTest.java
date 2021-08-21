@@ -10,6 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.EmailGenerator;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class PracticeWebshopTest {
@@ -209,5 +213,17 @@ public class PracticeWebshopTest {
         String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
         String expected = "An email address required.";
         Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void TermsAndConditions() {
+        final By TERMS_CONS = By.xpath("//*[@id=\"block_various_links_footer\"]/ul/li[6]/a");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((TERMS_CONS))).click();
+
+        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/h1")).getText();
+        String expected = "TERMS AND CONDITIONS OF USE";
+        Assertions.assertEquals(expected, result);
+
     }
 }
