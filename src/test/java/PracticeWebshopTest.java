@@ -24,8 +24,7 @@ public class PracticeWebshopTest {
     }
 
     @BeforeEach
-    public void Setup()
-    {
+    public void Setup() {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
@@ -37,14 +36,14 @@ public class PracticeWebshopTest {
     }
 
     @Test
-    public void Registration(){
+    public void Registration() {
         final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
         final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
 
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString()+"@gmail.com");
+        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString() + "@gmail.com");
         driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
 
         final By FIRST_NAME = By.xpath("//*[@id=\"customer_firstname\"]");
@@ -138,26 +137,26 @@ public class PracticeWebshopTest {
 
     @Test
     public void Login() {
-            final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
-            final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
-            final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
+        final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
+        final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
 
-            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
 
-            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-            driver.findElement(EMAIL_FIELD).sendKeys("autiteszti1@gmail.com");
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti1@gmail.com");
 
-            getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
-            driver.findElement(PASSWORD).sendKeys("Tester");
-            driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+        driver.findElement(PASSWORD).sendKeys("Tester");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
 
-            String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
-            String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
-            Assertions.assertEquals(expected, result);
+        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
+        String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
-    public void LoginWithNotRegisteredEmail(){
+    public void LoginWithNotRegisteredEmail() {
         final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
         final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
         final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
@@ -195,8 +194,9 @@ public class PracticeWebshopTest {
         String expected = "Invalid email address.";
         Assertions.assertEquals(expected, result);
     }
+
     @Test
-    public void LoginWithEmptyEmail(){
+    public void LoginWithEmptyEmail() {
         final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
         final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
         final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
@@ -224,6 +224,17 @@ public class PracticeWebshopTest {
         String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/h1")).getText();
         String expected = "TERMS AND CONDITIONS OF USE";
         Assertions.assertEquals(expected, result);
+    }
 
+    @Test
+    public void Logout() {
+        Login();
+        final By LOGOUT = By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a");
+
+        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGOUT))).click();
+
+        String result = driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).getText();
+        String expected = "Sign in";
+        Assertions.assertEquals(expected, result);
     }
 }
