@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pages.LoginPage;
 
 public class LoginTest extends Utils{
     WebDriver driver;
@@ -18,22 +19,10 @@ public class LoginTest extends Utils{
 
     @Test
     public void login() {
-        final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
-        final By EMAIL_FIELD = By.xpath("//*[@id=\"email\"]");
-        final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+        LoginPage loginPage = new LoginPage(getDriver(), getWebDriverWait());
 
-        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
-
-        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys("autiteszti1@gmail.com");
-
-        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
-        driver.findElement(PASSWORD).sendKeys("Tester");
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
-
-        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
         String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
-        Assertions.assertEquals(expected, result);
+        Assertions.assertEquals(expected, loginPage.Login("autiteszti1@gmail.com", "Tester"));
     }
 
     @Test
