@@ -66,4 +66,38 @@ public class RegistrationPage {
 
         return result;
     }
+
+    public String rWithInvalidEmail(String email){
+        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys(email);
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+        return result;
+    }
+    public String rWithAlreadyCreatedEmail(String email) {
+        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys(email);
+
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+
+        return result;
+    }
+    public String rWithEmptyField(String email) {
+        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
+        driver.findElement(EMAIL_FIELD).sendKeys("");
+        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
+
+        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
+
+        return result;
+    }
 }
