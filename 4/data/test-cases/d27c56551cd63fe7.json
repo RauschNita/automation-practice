@@ -1,0 +1,110 @@
+{
+  "uid" : "d27c56551cd63fe7",
+  "name" : "dataModifier()",
+  "fullName" : "DataTest.dataModifier",
+  "historyId" : "2b7460726f63c914c52575fc122a61a1",
+  "time" : {
+    "start" : 1630010767900,
+    "stop" : 1630010774201,
+    "duration" : 6301
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630010774142,
+      "stop" : 1630010774201,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4802@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "DataTest"
+  }, {
+    "name" : "testClass",
+    "value" : "DataTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "dataModifier"
+  }, {
+    "name" : "suite",
+    "value" : "DataTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2e4ba8b517f4b2bc",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/3//#testresult/2e4ba8b517f4b2bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630002730028,
+          "stop" : 1630002736399,
+          "duration" : 6371
+        }
+      }, {
+        "uid" : "b16970504ae197fa",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/2//#testresult/b16970504ae197fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000945464,
+          "stop" : 1630000951339,
+          "duration" : 5875
+        }
+      }, {
+        "uid" : "b4ed64df7cc375f7",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/b4ed64df7cc375f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000037136,
+          "stop" : 1630000044408,
+          "duration" : 7272
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d27c56551cd63fe7.json",
+  "parameterValues" : [ ]
+}

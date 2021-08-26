@@ -1,0 +1,110 @@
+{
+  "uid" : "5fdf21fa24e74a07",
+  "name" : "loginWithEmptyEmail()",
+  "fullName" : "LoginTest.loginWithEmptyEmail",
+  "historyId" : "d2a40a45a155557a128bdfeef9ae9b57",
+  "time" : {
+    "start" : 1630010826852,
+    "stop" : 1630010831198,
+    "duration" : 4346
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630010831136,
+      "stop" : 1630010831197,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4802@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithEmptyEmail"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "18489e9d28e2c108",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/3//#testresult/18489e9d28e2c108",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630002804102,
+          "stop" : 1630002808556,
+          "duration" : 4454
+        }
+      }, {
+        "uid" : "1b411896fcf53a8a",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/2//#testresult/1b411896fcf53a8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630001013848,
+          "stop" : 1630001018456,
+          "duration" : 4608
+        }
+      }, {
+        "uid" : "d5ab8d34c2850c3f",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/d5ab8d34c2850c3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000112865,
+          "stop" : 1630000118846,
+          "duration" : 5981
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5fdf21fa24e74a07.json",
+  "parameterValues" : [ ]
+}

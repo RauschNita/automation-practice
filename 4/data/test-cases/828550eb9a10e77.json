@@ -1,0 +1,125 @@
+{
+  "uid" : "828550eb9a10e77",
+  "name" : "registrationWithEmptyField()",
+  "fullName" : "RegistrationTest.registrationWithEmptyField",
+  "historyId" : "5a2376378587b3bca28c4070e5212dd5",
+  "time" : {
+    "start" : 1630010759029,
+    "stop" : 1630010763880,
+    "duration" : 4851
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1630010759031,
+      "stop" : 1630010761933,
+      "duration" : 2902
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630010763816,
+      "stop" : 1630010763879,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4802@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationWithEmptyField"
+  }, {
+    "name" : "suite",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "88978c76d08f9f6a",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/3//#testresult/88978c76d08f9f6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630002721867,
+          "stop" : 1630002725998,
+          "duration" : 4131
+        }
+      }, {
+        "uid" : "92ed5de4dfc9e73c",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/2//#testresult/92ed5de4dfc9e73c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000937230,
+          "stop" : 1630000941434,
+          "duration" : 4204
+        }
+      }, {
+        "uid" : "571a9b9a27a5676f",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/571a9b9a27a5676f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000027451,
+          "stop" : 1630000032075,
+          "duration" : 4624
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "828550eb9a10e77.json",
+  "parameterValues" : [ ]
+}

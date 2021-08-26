@@ -1,0 +1,161 @@
+[ {
+  "uid" : "d63e0cb9fc4d4fd2",
+  "name" : "loginWithEmptyEmail()",
+  "time" : {
+    "start" : 1630010797240,
+    "stop" : 1630010801810,
+    "duration" : 4570
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa8a2f09580e7a1e",
+  "name" : "login()",
+  "time" : {
+    "start" : 1630010821899,
+    "stop" : 1630010826849,
+    "duration" : 4950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe8605878961d06e",
+  "name" : "loginWithNotRegisteredEmail()",
+  "time" : {
+    "start" : 1630010816236,
+    "stop" : 1630010821893,
+    "duration" : 5657
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "996115a6361572b",
+  "name" : "registrationWithAlreadyCreatedEmail()",
+  "time" : {
+    "start" : 1630010753445,
+    "stop" : 1630010759023,
+    "duration" : 5578
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c33dabf91d58dee9",
+  "name" : "logout()",
+  "time" : {
+    "start" : 1630010801813,
+    "stop" : 1630010810776,
+    "duration" : 8963
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "828550eb9a10e77",
+  "name" : "registrationWithEmptyField()",
+  "time" : {
+    "start" : 1630010759029,
+    "stop" : 1630010763880,
+    "duration" : 4851
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3210bb335669998c",
+  "name" : "termsAndConditions()",
+  "time" : {
+    "start" : 1630010831204,
+    "stop" : 1630010834319,
+    "duration" : 3115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8838d0a2ecda7d7a",
+  "name" : "login()",
+  "time" : {
+    "start" : 1630010792409,
+    "stop" : 1630010797237,
+    "duration" : 4828
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8382694f9e3ef22b",
+  "name" : "loginWithInvalidEmail()",
+  "time" : {
+    "start" : 1630010810787,
+    "stop" : 1630010816233,
+    "duration" : 5446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75e9db759c4f2e31",
+  "name" : "loginWithNotRegisteredEmail()",
+  "time" : {
+    "start" : 1630010787883,
+    "stop" : 1630010792407,
+    "duration" : 4524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d27c56551cd63fe7",
+  "name" : "dataModifier()",
+  "time" : {
+    "start" : 1630010767900,
+    "stop" : 1630010774201,
+    "duration" : 6301
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9d9e44bf977ef0",
+  "name" : "registration()",
+  "time" : {
+    "start" : 1630010745614,
+    "stop" : 1630010753342,
+    "duration" : 7728
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9ef0f46cb508c9",
+  "name" : "dataDelete()",
+  "time" : {
+    "start" : 1630010774211,
+    "stop" : 1630010783671,
+    "duration" : 9460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2162810deb8aa100",
+  "name" : "loginWithInvalidEmail()",
+  "time" : {
+    "start" : 1630010783690,
+    "stop" : 1630010787880,
+    "duration" : 4190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fdf21fa24e74a07",
+  "name" : "loginWithEmptyEmail()",
+  "time" : {
+    "start" : 1630010826852,
+    "stop" : 1630010831198,
+    "duration" : 4346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2c1437f5c554849",
+  "name" : "registrationWithInvalidEmail()",
+  "time" : {
+    "start" : 1630010763887,
+    "stop" : 1630010767887,
+    "duration" : 4000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
