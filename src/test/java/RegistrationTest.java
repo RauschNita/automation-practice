@@ -11,44 +11,68 @@ import pages.LoginPage;
 import pages.RegistrationPage;
 
 public class RegistrationTest extends Utils {
-    /*WebDriver driver;
+    WebDriver driver;
 
     @BeforeEach
     public void setUp() {
         this.driver = getDriver();
-        getWebDriverWait();
-    }*/
+    }
     @Test
     public void registration() {
-        RegistrationPage registrationPage = new RegistrationPage(getDriver(), getWebDriverWait());
+        LoginPage loginPage = new LoginPage(driver, getWebDriverWait());
+        loginPage.clickSignIn();
+
+        loginPage.fillOutNewEmailField(EmailGenerator.getSaltString() + "@gmail.com");
+        loginPage.createAccount();
+
+        RegistrationPage registrationPage = new RegistrationPage(driver, getWebDriverWait());
+        registrationPage.setFirstName("Auti");
+        registrationPage.setLastName("Teszti");
+        registrationPage.setPassword("Tester");
+        registrationPage.setAddress("Hollywood boulevard 187.");
+        registrationPage.setCity("Austin");
+        registrationPage.setState();
+        registrationPage.setPostcode("10002");
+        registrationPage.setPhone("+0111888555");
+        registrationPage.clickRegister();
 
         String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
-        Assertions.assertEquals(expected, registrationPage.fillOutRegistrationForm("Auti", "Teszti", "Tester", "Hollywood boulevard", "Austin", "10002", "+0111888555"));
-
+        Assertions.assertEquals(expected, registrationPage.getMessage());
     }
 
     @Test
     public void registrationWithInvalidEmail() {
-        RegistrationPage registrationPage = new RegistrationPage(getDriver(), getWebDriverWait());
+        LoginPage loginPage = new LoginPage(driver, getWebDriverWait());
+        loginPage.clickSignIn();
+
+        loginPage.fillOutEmailField("0");
+        loginPage.createAccount();
 
         String expected = "Invalid email address.";
-        Assertions.assertEquals(expected, registrationPage.rWithInvalidEmail("0"));
+        Assertions.assertEquals(expected, loginPage.getInvalidSinginMessage());
     }
 
     @Test
     public void registrationWithAlreadyCreatedEmail() {
-        RegistrationPage registrationPage = new RegistrationPage(getDriver(), getWebDriverWait());
+        LoginPage loginPage = new LoginPage(driver, getWebDriverWait());
+        loginPage.clickSignIn();
 
-        String expected = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
-        Assertions.assertEquals(expected, registrationPage.rWithAlreadyCreatedEmail("autiteszti@gmail.com"));
+        loginPage.fillOutEmailField("autiteszti@gmail.com");
+        loginPage.createAccount();
+
+        String expected = "Invalid email address.";
+        Assertions.assertEquals(expected, loginPage.getInvalidSinginMessage());
     }
 
     @Test
     public void registrationWithEmptyField() {
-        RegistrationPage registrationPage = new RegistrationPage(getDriver(), getWebDriverWait());
+        LoginPage loginPage = new LoginPage(driver, getWebDriverWait());
+        loginPage.clickSignIn();
+
+        loginPage.createAccount();
 
         String expected = "Invalid email address.";
-        Assertions.assertEquals(expected, registrationPage.rWithEmptyField(""));
+        Assertions.assertEquals(expected, loginPage.getInvalidSinginMessage());
     }
 
 }

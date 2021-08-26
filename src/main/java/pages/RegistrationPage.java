@@ -10,94 +10,52 @@ public class RegistrationPage {
     WebDriver driver;
     WebDriverWait wait;
 
-    final By LOGIN = By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a");
-    final By EMAIL_FIELD = By.xpath("//*[@id=\"email_create\"]");
-
-    final By FIRST_NAME = By.xpath("//*[@id=\"customer_firstname\"]");
-    final By LAST_NAME = By.xpath("//*[@id=\"customer_lastname\"]");
-    final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
-    final By ADDRESS = By.id("address1");
-    final By CITY = By.id("city");
-    final By STATE = By.id("uniform-id_state");
-    final By SELECTED_STATE = By.xpath("//*[@id=\"id_state\"]/option[46]");
-    final By POSTCODE = By.id("postcode");
-    final By MOBILE_PHONE = By.id("phone_mobile");
-
+    private final By FIRST_NAME = By.xpath("//*[@id=\"customer_firstname\"]");
+    private final By LAST_NAME = By.xpath("//*[@id=\"customer_lastname\"]");
+    private final By PASSWORD = By.xpath("//*[@id=\"passwd\"]");
+    private final By ADDRESS = By.id("address1");
+    private final By CITY = By.id("city");
+    private final By STATE = By.id("uniform-id_state");
+    private final By SELECTED_STATE = By.xpath("//*[@id=\"id_state\"]/option[46]");
+    private final By POSTCODE = By.id("postcode");
+    private final By MOBILE_PHONE = By.id("phone_mobile");
+    private final By REGISTER = By.xpath("//*[@id=\"submitAccount\"]");
+    private final By WELCOME_ACCOUNT = By.cssSelector("#center_column > p");
 
     public RegistrationPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
     }
-
-    public String fillOutRegistrationForm(String fname, String lname, String pword, String address, String city, String pcode, String phone){
-
-        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys(EmailGenerator.getSaltString() + "@gmail.com");
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
-
-        wait.until(ExpectedConditions.elementToBeClickable((FIRST_NAME))).click();
+    public void setFirstName(String fname){
         driver.findElement(FIRST_NAME).sendKeys(fname);
-
-        wait.until(ExpectedConditions.elementToBeClickable((LAST_NAME))).click();
+    }
+    public void setLastName(String lname){
         driver.findElement(LAST_NAME).sendKeys(lname);
-
-        wait.until(ExpectedConditions.elementToBeClickable((PASSWORD))).click();
+    }
+    public void setPassword(String pword){
         driver.findElement(PASSWORD).sendKeys(pword);
-
-        wait.until(ExpectedConditions.elementToBeClickable((ADDRESS))).click();
+    }
+    public void setAddress(String address){
         driver.findElement(ADDRESS).sendKeys(address);
-
-        wait.until(ExpectedConditions.elementToBeClickable((CITY))).click();
+    }
+    public void setCity(String city){
         driver.findElement(CITY).sendKeys(city);
-
+    }
+    public void setState(){
         wait.until(ExpectedConditions.elementToBeClickable((STATE))).click();
         driver.findElement(SELECTED_STATE).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable((POSTCODE))).click();
+    }
+    public void setPostcode(String pcode){
         driver.findElement(POSTCODE).sendKeys(pcode);
-
-        wait.until(ExpectedConditions.elementToBeClickable((MOBILE_PHONE))).click();
+    }
+    public void setPhone(String phone){
         driver.findElement(MOBILE_PHONE).sendKeys(phone);
-        driver.findElement(MOBILE_PHONE).sendKeys(Keys.ENTER);
-
-        String result = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p")).getText();
-
-        return result;
     }
-
-    public String rWithInvalidEmail(String email){
-        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys(email);
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
-
-        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
-        return result;
+    public void clickRegister(){
+        driver.findElement(REGISTER).click();
     }
-    public String rWithAlreadyCreatedEmail(String email) {
-        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys(email);
-
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
-
-        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
-
-        return result;
-    }
-    public String rWithEmptyField(String email) {
-        wait.until(ExpectedConditions.elementToBeClickable((LOGIN))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable((EMAIL_FIELD))).click();
-        driver.findElement(EMAIL_FIELD).sendKeys("");
-        driver.findElement(EMAIL_FIELD).sendKeys(Keys.ENTER);
-
-        String result = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li")).getText();
-
+    public String getMessage(){
+        String result = driver.findElement(WELCOME_ACCOUNT).getText();
         return result;
     }
 }

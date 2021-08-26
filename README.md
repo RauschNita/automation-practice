@@ -7,3 +7,5 @@ A tesztek futtatásához le kell tölteni GitHubról a projektet, importálni eg
 
 Tesztmenedzseri táblázat elérése:
 https://docs.google.com/spreadsheets/d/1CAsfXL7R-w0F6rHUOBu6s6nwZU1EK_rK/edit?usp=sharing&ouid=101108164193803666499&rtpof=true&sd=true
+
+Az tesztek automatizáltan futtnak push hatására a GitHub-on. A tesztek reportjai szintén automatikusan futnak, az alábbi linken elérhető: https://rauschnita.github.io/automation-practice/ 
