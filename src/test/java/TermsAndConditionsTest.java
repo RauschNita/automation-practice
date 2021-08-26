@@ -48,8 +48,4 @@ public class TermsAndConditionsTest extends Utils{
         Assertions.assertEquals(7, lines);
     }
 
-    @AfterEach
-    public void tearDown() {
-        driver.close();
-    }
 }

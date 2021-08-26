@@ -1,0 +1,1 @@
+{"uuid":"6e12bac0-438a-4dae-8ebb-d6190626e01a","name":"loginWithInvalidEmail()","children":["997375f9-6ad5-43ba-a262-6eb95f21f6ec"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1629999464096,"stop":1629999464195}],"links":[],"start":1629999442375,"stop":1629999464489}

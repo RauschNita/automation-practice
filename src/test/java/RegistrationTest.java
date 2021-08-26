@@ -51,8 +51,4 @@ public class RegistrationTest extends Utils {
         Assertions.assertEquals(expected, registrationPage.rWithEmptyField(""));
     }
 
-    @AfterEach
-    public void tearDown() {
-        driver.close();
-    }
 }

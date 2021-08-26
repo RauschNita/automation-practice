@@ -1,16 +1,22 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.PersonalInfosPage;
 
-public class DataTest extends LoginTest{
+public class DataTest extends Utils{
 
     @Test
     public void dataModifier() {
-        login();
+        WebDriver driver = getDriver();
+        LoginPage loginPage = new LoginPage(driver, getWebDriverWait());
+        loginPage.clickSignIn();
 
-        PersonalInfosPage personalPage = new PersonalInfosPage(getDriver(), getWebDriverWait());
+        loginPage.fillOutEmailField("autiteszti1@gmail.com");
+        loginPage.fillOutPasswordField("Tester");
+
+        PersonalInfosPage personalPage = new PersonalInfosPage(driver, getWebDriverWait());
         personalPage.navigate();
         personalPage.changeRadioSelected();
         personalPage.setPassword();
