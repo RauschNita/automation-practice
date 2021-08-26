@@ -1,0 +1,92 @@
+{
+  "uid" : "1b411896fcf53a8a",
+  "name" : "loginWithEmptyEmail()",
+  "fullName" : "LoginTest.loginWithEmptyEmail",
+  "historyId" : "d2a40a45a155557a128bdfeef9ae9b57",
+  "time" : {
+    "start" : 1630001013848,
+    "stop" : 1630001018456,
+    "duration" : 4608
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630001018398,
+      "stop" : 1630001018456,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4864@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithEmptyEmail"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "d5ab8d34c2850c3f",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/d5ab8d34c2850c3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000112865,
+          "stop" : 1630000118846,
+          "duration" : 5981
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1b411896fcf53a8a.json",
+  "parameterValues" : [ ]
+}

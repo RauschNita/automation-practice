@@ -1,0 +1,92 @@
+{
+  "uid" : "303798a230414283",
+  "name" : "registration()",
+  "fullName" : "RegistrationTest.registration",
+  "historyId" : "8987408bbe39a1d29b183f9749fb383f",
+  "time" : {
+    "start" : 1630000925241,
+    "stop" : 1630000933277,
+    "duration" : 8036
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630000933201,
+      "stop" : 1630000933270,
+      "duration" : 69
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4864@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registration"
+  }, {
+    "name" : "suite",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8cc49f44e447095f",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/8cc49f44e447095f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000013657,
+          "stop" : 1630000023677,
+          "duration" : 10020
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "303798a230414283.json",
+  "parameterValues" : [ ]
+}

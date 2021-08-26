@@ -1,0 +1,233 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "RegistrationTest",
+    "children" : [ {
+      "name" : "registration",
+      "uid" : "303798a230414283",
+      "parentUid" : "ad6bf52d94fce581bf981be9b55e28e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000925241,
+        "stop" : 1630000933277,
+        "duration" : 8036
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registrationWithAlreadyCreatedEmail",
+      "uid" : "1af8c96cb489383d",
+      "parentUid" : "ad6bf52d94fce581bf981be9b55e28e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000933361,
+        "stop" : 1630000937219,
+        "duration" : 3858
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registrationWithEmptyField",
+      "uid" : "92ed5de4dfc9e73c",
+      "parentUid" : "ad6bf52d94fce581bf981be9b55e28e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000937230,
+        "stop" : 1630000941434,
+        "duration" : 4204
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registrationWithInvalidEmail",
+      "uid" : "822bad6b5a303440",
+      "parentUid" : "ad6bf52d94fce581bf981be9b55e28e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000941437,
+        "stop" : 1630000945454,
+        "duration" : 4017
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ad6bf52d94fce581bf981be9b55e28e9"
+  }, {
+    "name" : "DataTest",
+    "children" : [ {
+      "name" : "dataModifier",
+      "uid" : "b16970504ae197fa",
+      "parentUid" : "858e9efb57787b72c349f85d1f6a41c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000945464,
+        "stop" : 1630000951339,
+        "duration" : 5875
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "dataDelete",
+      "uid" : "7ff119a9c86692e",
+      "parentUid" : "858e9efb57787b72c349f85d1f6a41c0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1630000951343,
+        "stop" : 1630000965572,
+        "duration" : 14229
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "858e9efb57787b72c349f85d1f6a41c0"
+  }, {
+    "name" : "LogoutTest",
+    "children" : [ {
+      "name" : "loginWithInvalidEmail",
+      "uid" : "5c5cc4e1637e36fd",
+      "parentUid" : "05e8fc011914479cb195ed58b1dd4bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000965588,
+        "stop" : 1630000972301,
+        "duration" : 6713
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginWithNotRegisteredEmail",
+      "uid" : "75fecc3695b0ebce",
+      "parentUid" : "05e8fc011914479cb195ed58b1dd4bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000972303,
+        "stop" : 1630000980676,
+        "duration" : 8373
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "login",
+      "uid" : "7dcb8faa5d03cfdc",
+      "parentUid" : "05e8fc011914479cb195ed58b1dd4bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000980683,
+        "stop" : 1630000986961,
+        "duration" : 6278
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginWithEmptyEmail",
+      "uid" : "7d7a0a3cce7b9f29",
+      "parentUid" : "05e8fc011914479cb195ed58b1dd4bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000986968,
+        "stop" : 1630000991125,
+        "duration" : 4157
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logout",
+      "uid" : "aa0ed8cfb98aa406",
+      "parentUid" : "05e8fc011914479cb195ed58b1dd4bad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000991129,
+        "stop" : 1630000999852,
+        "duration" : 8723
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "05e8fc011914479cb195ed58b1dd4bad"
+  }, {
+    "name" : "LoginTest",
+    "children" : [ {
+      "name" : "loginWithInvalidEmail",
+      "uid" : "461f7513a2a2dba2",
+      "parentUid" : "7cbde4e1492086c9f8631b2d4e369dc0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000999861,
+        "stop" : 1630001003822,
+        "duration" : 3961
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginWithNotRegisteredEmail",
+      "uid" : "740c9055764103da",
+      "parentUid" : "7cbde4e1492086c9f8631b2d4e369dc0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630001003824,
+        "stop" : 1630001008671,
+        "duration" : 4847
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "login",
+      "uid" : "b16159c9ecaa25ba",
+      "parentUid" : "7cbde4e1492086c9f8631b2d4e369dc0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630001008676,
+        "stop" : 1630001013841,
+        "duration" : 5165
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginWithEmptyEmail",
+      "uid" : "1b411896fcf53a8a",
+      "parentUid" : "7cbde4e1492086c9f8631b2d4e369dc0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630001013848,
+        "stop" : 1630001018456,
+        "duration" : 4608
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7cbde4e1492086c9f8631b2d4e369dc0"
+  }, {
+    "name" : "TermsAndConditionsTest",
+    "children" : [ {
+      "name" : "termsAndConditions",
+      "uid" : "ff38e8597d14212f",
+      "parentUid" : "cf6aa018186332328021ac41a0a87b23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630001018472,
+        "stop" : 1630001021765,
+        "duration" : 3293
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cf6aa018186332328021ac41a0a87b23"
+  } ],
+  "name" : "packages"
+}

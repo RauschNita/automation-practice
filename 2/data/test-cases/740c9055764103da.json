@@ -1,0 +1,92 @@
+{
+  "uid" : "740c9055764103da",
+  "name" : "loginWithNotRegisteredEmail()",
+  "fullName" : "LoginTest.loginWithNotRegisteredEmail",
+  "historyId" : "ce6fa6be1ff52b5a709a8246e7d82b4d",
+  "time" : {
+    "start" : 1630001003824,
+    "stop" : 1630001008671,
+    "duration" : 4847
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630001008611,
+      "stop" : 1630001008671,
+      "duration" : 60
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4864@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithNotRegisteredEmail"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "b1bce0d84105b77a",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/b1bce0d84105b77a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000097372,
+          "stop" : 1630000102016,
+          "duration" : 4644
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "740c9055764103da.json",
+  "parameterValues" : [ ]
+}

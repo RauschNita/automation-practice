@@ -1,0 +1,92 @@
+{
+  "uid" : "75fecc3695b0ebce",
+  "name" : "loginWithNotRegisteredEmail()",
+  "fullName" : "LogoutTest.loginWithNotRegisteredEmail",
+  "historyId" : "bad0db070d18fbfd148f1af9577150a3",
+  "time" : {
+    "start" : 1630000972303,
+    "stop" : 1630000980676,
+    "duration" : 8373
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630000980616,
+      "stop" : 1630000980675,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4864@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithNotRegisteredEmail"
+  }, {
+    "name" : "suite",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "e378d0b29abd9f3c",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/e378d0b29abd9f3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000064356,
+          "stop" : 1630000072316,
+          "duration" : 7960
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "75fecc3695b0ebce.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,92 @@
+{
+  "uid" : "aa0ed8cfb98aa406",
+  "name" : "logout()",
+  "fullName" : "LogoutTest.logout",
+  "historyId" : "122ac2e3d67cf3110a017efa3b3240ac",
+  "time" : {
+    "start" : 1630000991129,
+    "stop" : 1630000999852,
+    "duration" : 8723
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630000999791,
+      "stop" : 1630000999852,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-461"
+  }, {
+    "name" : "thread",
+    "value" : "4864@fv-az39-461.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logout"
+  }, {
+    "name" : "suite",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6b0d634dbad62b2b",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/6b0d634dbad62b2b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630000085524,
+          "stop" : 1630000093298,
+          "duration" : 7774
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "aa0ed8cfb98aa406.json",
+  "parameterValues" : [ ]
+}
