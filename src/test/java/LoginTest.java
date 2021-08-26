@@ -44,9 +44,9 @@ public class LoginTest extends Utils{
         String expected = "An email address required.";
         Assertions.assertEquals(expected, loginPage.loginWithEmptyEmail(""));
     }
-
+/*
     @AfterEach
     public void tearDown() {
         driver.close();
-    }
+    }*/
 }

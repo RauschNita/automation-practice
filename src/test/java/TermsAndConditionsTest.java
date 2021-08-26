@@ -6,15 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pages.TermsAndConsPage;
 
 import java.io.*;
 import java.util.List;
 
 public class TermsAndConditionsTest extends Utils{
     WebDriver driver;
-
-    private final By TERMS_CONS = By.xpath("//*[@id=\"block_various_links_footer\"]/ul/li[6]/a");
-    private final By TERMS_AND_CONDITIONS_TEXT = By.cssSelector("#columns .row");
 
     @BeforeEach
     public void setUp() {
@@ -24,15 +22,15 @@ public class TermsAndConditionsTest extends Utils{
 
     @Test
     public void termsAndConditions() throws IOException {
-
-        getWebDriverWait().until(ExpectedConditions.elementToBeClickable((TERMS_CONS))).click();
+        TermsAndConsPage tandconPage = new TermsAndConsPage(driver, getWebDriverWait());
+        tandconPage.navigate();
 
         FileWriter writer = new FileWriter("termsandconditions.txt");
         BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
-        List<WebElement> texts = driver.findElements(TERMS_AND_CONDITIONS_TEXT);
-        for (WebElement text : texts) {
-            bufferedWriter.append(text.getText());
+        List<String> texts = tandconPage.getTandCList();
+        for (String text : texts) {
+            bufferedWriter.append(text);
         }
         bufferedWriter.close();
 
