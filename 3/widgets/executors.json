@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://RauschNita.github.io/automation-practice",
+  "buildOrder" : 3,
+  "buildName" : "GitHub Actions Run #1171574338",
+  "buildUrl" : "https://github.com/RauschNita/automation-practice/actions/runs/1171574338",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://RauschNita.github.io/automation-practice/3/"
+} ]

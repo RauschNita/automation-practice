@@ -1,0 +1,103 @@
+{
+  "uid" : "c540fe61e7ab3780",
+  "name" : "dataDelete()",
+  "fullName" : "DataTest.dataDelete",
+  "historyId" : "71acf6639d81137f1d9f2d7957fb910b",
+  "time" : {
+    "start" : 1630002736403,
+    "stop" : 1630002748046,
+    "duration" : 11643
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630002747985,
+      "stop" : 1630002748046,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az77-272"
+  }, {
+    "name" : "thread",
+    "value" : "4834@fv-az77-272.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "DataTest"
+  }, {
+    "name" : "testClass",
+    "value" : "DataTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "dataDelete"
+  }, {
+    "name" : "suite",
+    "value" : "DataTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7ff119a9c86692e",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/2//#testresult/7ff119a9c86692e",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-461', ip: '10.1.0.136', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.7JRgsm}, goog:chromeOptions: {debuggerAddress: localhost:46691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ea903a101c65b4133fd7dce460795f64\n*** Element info: {Using=xpath, value=//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]}",
+        "time" : {
+          "start" : 1630000951343,
+          "stop" : 1630000965572,
+          "duration" : 14229
+        }
+      }, {
+        "uid" : "ab47fcff87a645a",
+        "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/ab47fcff87a645a",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1] (tried for 10 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1630000044411,
+          "stop" : 1630000059320,
+          "duration" : 14909
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c540fe61e7ab3780.json",
+  "parameterValues" : [ ]
+}
