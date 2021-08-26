@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1] (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "dataDelete()",
+        "uid" : "ab47fcff87a645a",
+        "parentUid" : "f90661d37df1ea8c383195e396617dff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1630000044411,
+          "stop" : 1630000059320,
+          "duration" : 14909
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f90661d37df1ea8c383195e396617dff"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

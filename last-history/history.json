@@ -1,0 +1,323 @@
+{
+  "6d02f450cf9fa2dc87028ce0be806347" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2f5d1b7bef85ef97",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/2f5d1b7bef85ef97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000023773,
+        "stop" : 1630000027443,
+        "duration" : 3670
+      }
+    } ]
+  },
+  "fa68a8ce4a02088ed52889b05b291afe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c22c4a0018fd6e9a",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/c22c4a0018fd6e9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000072323,
+        "stop" : 1630000080206,
+        "duration" : 7883
+      }
+    } ]
+  },
+  "691a17ee3db0d2eeef7c14df6fc13782" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6bd6c566806e1468",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/6bd6c566806e1468",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000102021,
+        "stop" : 1630000112859,
+        "duration" : 10838
+      }
+    } ]
+  },
+  "4e8b0e63fa5c91c599d2195b27b40637" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e9fc5f0d351f47c",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/1e9fc5f0d351f47c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000093302,
+        "stop" : 1630000097366,
+        "duration" : 4064
+      }
+    } ]
+  },
+  "bad0db070d18fbfd148f1af9577150a3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e378d0b29abd9f3c",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/e378d0b29abd9f3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000064356,
+        "stop" : 1630000072316,
+        "duration" : 7960
+      }
+    } ]
+  },
+  "71acf6639d81137f1d9f2d7957fb910b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ab47fcff87a645a",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/ab47fcff87a645a",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1] (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1630000044411,
+        "stop" : 1630000059320,
+        "duration" : 14909
+      }
+    } ]
+  },
+  "2b7460726f63c914c52575fc122a61a1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4ed64df7cc375f7",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/b4ed64df7cc375f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000037136,
+        "stop" : 1630000044408,
+        "duration" : 7272
+      }
+    } ]
+  },
+  "8987408bbe39a1d29b183f9749fb383f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8cc49f44e447095f",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/8cc49f44e447095f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000013657,
+        "stop" : 1630000023677,
+        "duration" : 10020
+      }
+    } ]
+  },
+  "5a2376378587b3bca28c4070e5212dd5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "571a9b9a27a5676f",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/571a9b9a27a5676f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000027451,
+        "stop" : 1630000032075,
+        "duration" : 4624
+      }
+    } ]
+  },
+  "d2a40a45a155557a128bdfeef9ae9b57" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d5ab8d34c2850c3f",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/d5ab8d34c2850c3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000112865,
+        "stop" : 1630000118846,
+        "duration" : 5981
+      }
+    } ]
+  },
+  "ce6fa6be1ff52b5a709a8246e7d82b4d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b1bce0d84105b77a",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/b1bce0d84105b77a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000097372,
+        "stop" : 1630000102016,
+        "duration" : 4644
+      }
+    } ]
+  },
+  "122ac2e3d67cf3110a017efa3b3240ac" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b0d634dbad62b2b",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/6b0d634dbad62b2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000085524,
+        "stop" : 1630000093298,
+        "duration" : 7774
+      }
+    } ]
+  },
+  "4e6da51ebcc21afe0e65569f0825adea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "524d479ce8f3498",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/524d479ce8f3498",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000059331,
+        "stop" : 1630000064353,
+        "duration" : 5022
+      }
+    } ]
+  },
+  "3d54bee11e8e3173f3b8027a04e8fd7d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3e6f4b175b8802d",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/e3e6f4b175b8802d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000080210,
+        "stop" : 1630000085520,
+        "duration" : 5310
+      }
+    } ]
+  },
+  "9ea7547682de90b728807d0bfea2a77f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "26ffb758614380ea",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/26ffb758614380ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000118854,
+        "stop" : 1630000121615,
+        "duration" : 2761
+      }
+    } ]
+  },
+  "a5dbd04b94564b2540cfeb92fc123855" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9bdf77c93154935c",
+      "reportUrl" : "https://RauschNita.github.io/automation-practice/1//#testresult/9bdf77c93154935c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630000032078,
+        "stop" : 1630000037128,
+        "duration" : 5050
+      }
+    } ]
+  }
+}

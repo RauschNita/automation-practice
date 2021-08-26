@@ -1,0 +1,72 @@
+{
+  "uid" : "c22c4a0018fd6e9a",
+  "name" : "login()",
+  "fullName" : "LogoutTest.login",
+  "historyId" : "fa68a8ce4a02088ed52889b05b291afe",
+  "time" : {
+    "start" : 1630000072323,
+    "stop" : 1630000080206,
+    "duration" : 7883
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630000080147,
+      "stop" : 1630000080205,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az36-263"
+  }, {
+    "name" : "thread",
+    "value" : "4912@fv-az36-263.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "login"
+  }, {
+    "name" : "suite",
+    "value" : "LogoutTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c22c4a0018fd6e9a.json",
+  "parameterValues" : [ ]
+}

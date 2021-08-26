@@ -1,0 +1,9 @@
+[ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://RauschNita.github.io/automation-practice/1/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 16,
+    "retry" : 0
+  }
+} ]

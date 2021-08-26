@@ -1,0 +1,72 @@
+{
+  "uid" : "b1bce0d84105b77a",
+  "name" : "loginWithNotRegisteredEmail()",
+  "fullName" : "LoginTest.loginWithNotRegisteredEmail",
+  "historyId" : "ce6fa6be1ff52b5a709a8246e7d82b4d",
+  "time" : {
+    "start" : 1630000097372,
+    "stop" : 1630000102016,
+    "duration" : 4644
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1630000101956,
+      "stop" : 1630000102016,
+      "duration" : 60
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az36-263"
+  }, {
+    "name" : "thread",
+    "value" : "4912@fv-az36-263.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithNotRegisteredEmail"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b1bce0d84105b77a.json",
+  "parameterValues" : [ ]
+}
