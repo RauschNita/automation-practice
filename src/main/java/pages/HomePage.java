@@ -28,7 +28,8 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable((FIRST_DRESS))).click();
     }
     public void clickCart(){
-        wait.until(ExpectedConditions.elementToBeClickable((ADD_TO_CART))).click();
+        driver.findElement(ADD_TO_CART).click();
+      //  wait.until(ExpectedConditions.elementToBeClickable((ADD_TO_CART))).click();
     }
     public void clickCheckout(){
         wait.until(ExpectedConditions.elementToBeClickable((CHECKOUT))).click();
