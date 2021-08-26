@@ -2,16 +2,19 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class HomePage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
     private final By DRESSES = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[2]/a");
-    private final By FIRST_DRESS = By.xpath("//*[@id=\"center_column\"]/ul/li[1]");
-    private final By ADD_TO_CART = By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]");
+    private final By FIRST_DRESS = By.xpath("//*[@id=\"center_column\"]/ul//li[1]/div/div/div/a[1]");
+    private final By ADD_TO_CART = By.xpath("//*[@id=\"add_to_cart\"]/button");
     private final By CHECKOUT = By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a");
     private final By DELETE = By.xpath("//*[@id=\"3_13_0_0\"]");
     private final By MESSAGE = By.xpath("/html/body/div/div[2]/div/div[3]/div/p");
@@ -25,7 +28,9 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable((DRESSES))).click();
     }
     public void clickProduct(){
-        wait.until(ExpectedConditions.elementToBeClickable((FIRST_DRESS))).click();
+        String link = driver.findElement(FIRST_DRESS).getAttribute("href");
+        driver.get(link);
+        //wait.until(ExpectedConditions.elementToBeClickable((FIRST_DRESS))).click();
     }
     public void clickCart(){
         driver.findElement(ADD_TO_CART).click();
