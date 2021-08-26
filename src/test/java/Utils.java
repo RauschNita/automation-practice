@@ -21,7 +21,7 @@ public class Utils {
         return driver;
     }
 
-    public WebDriverWait getWebDriverWait() {
+    public WebDriverWait getWebDriverWait(){
 
         return new WebDriverWait(driver, 10);
     }

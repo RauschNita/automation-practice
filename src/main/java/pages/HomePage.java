@@ -14,12 +14,13 @@ public class HomePage {
     private final By ADD_TO_CART = By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]");
     private final By CHECKOUT = By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a");
     private final By DELETE = By.xpath("//*[@id=\"3_13_0_0\"]");
-    private final By MESSAGE = By.xpath("//*[@id=\"center_column\"]/p");
+    private final By MESSAGE = By.xpath("/html/body/div/div[2]/div/div[3]/div/p");
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
     }
+
     public void clickDresses(){
         wait.until(ExpectedConditions.elementToBeClickable((DRESSES))).click();
     }
@@ -33,7 +34,15 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable((CHECKOUT))).click();
     }
     public void clickDelete(){
-        wait.until(ExpectedConditions.elementToBeClickable((DELETE))).click();
+        String link= driver.findElement(DELETE).getAttribute("href");
+        driver.get(link);
+
+//        wait.until(ExpectedConditions.elementToBeClickable((DELETE))).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     public String getMessage(){
         String result = driver.findElement(MESSAGE).getText();
